@@ -17,5 +17,4 @@ jobs:
       - run:
           name: Upload to GCP
           command: |
-            gsutil help
-            
+            gsutil rsync -d -r site gs://www.wedgar.biz
